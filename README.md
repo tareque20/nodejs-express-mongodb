@@ -49,6 +49,8 @@ $ db.createCollection('books')
 $ db.createCollection('genres')
 $ db.genres.insert({name: 'Test name 1'})
 $ db.genres.find().pretty()
+$ db.books.insert({title : "Test title 1", genres : "Suspense", description : "This is for test description 1", author : "auther 1"});
+$ db.books.find().pretty()
 ```
 More info: https://docs.mongodb.com/manual/crud/
 
@@ -71,3 +73,4 @@ post: /api/genres
 put: /api/genres/1
 delete: /api/genres/1
 ```
+### Use postman to test api
