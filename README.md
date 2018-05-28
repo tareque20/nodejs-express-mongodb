@@ -1,8 +1,9 @@
 # nodejs express mongodb
-RestFull api example with MongoDB and Joi validation
+RestFull api example with MongoDB, Joi validation, Handlebar Template Engine
 
 # Run Project:
 ```sh
+$ npm init
 $ npm install
 ```
 ```sh
@@ -53,6 +54,11 @@ $ db.books.insert({title : "Test title 1", genres : "Suspense", description : "T
 $ db.books.find().pretty()
 ```
 More info: https://docs.mongodb.com/manual/crud/
+
+# Run Mongo Database
+```sh
+$ sudo service mongod start
+```
 
 # API Routes:
 Books:
