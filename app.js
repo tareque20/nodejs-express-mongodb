@@ -39,7 +39,7 @@ app.use(function (req, res, next) {
     next();
 })
 
-mongoose.connect('mongodb://localhost/nodeapp');
+mongoose.connect('mongodb://localhost/nodeapp', { useNewUrlParser: true });
 var db = mongoose.connection;
 
 // set routes
